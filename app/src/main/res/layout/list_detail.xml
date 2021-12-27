@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleProfile"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="35dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/descProfile"
+                android:justificationMode="inter_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="ISIAJA"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Baca Lebih Lanjut"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/officialWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="actionToLink"
+                android:text="http://cobaaja.com"
+                android:textColor="@color/purple_200"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
